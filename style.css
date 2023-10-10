@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin: 1rem;
+  color: #ffffff;
+  animation: cambio-color 2s ease-in-out infinite;
+  -webkit-animation: cambio-color 2s ease-in-out infinite;
+}
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #272727;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.2rem;
+}
+
+button {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 3.5rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+}
+
+button:hover {
+  background-color: #546b7e;
+}
+.tittle {
+    color: red;
+    animation: cambio-color 2s ease-in-out infinite;
+    -webkit-animation: cambio-color 2s ease-in-out infinite;
+}
+  
+  @keyframes cambio-color {
+    0% {
+      color: red;
+    }
+    50% {
+      color: blue;
+    }
+    100% {
+      color: green;
+    }
+  }
